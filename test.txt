@@ -1,0 +1,64 @@
+akshay is a akshay akshay very very akshay
+
+I also think the kill switch feature is target to block Row build in China. At first, when kill switch be implemented, there is only Row build, and no 2144 build. Then 2144 build came and 2144 build also have kill switch feature. 
+And then the geo feature came to block Row build in China and block 2144 build outside China.
+
+The kill switch feature seems has not been released and keep disabled all the time.
+
+The old out of date (45/90 days) feature is also applicable for Row and 2144 build in China region and only enabled in d build. And the old out of date feature seems also target to block Row build in China. It's be replaced by geo feature after geo feature came. 
+
+If no updates are available, only display the uninstall related messaging. (Done)
+If this feature is disabled (eolEnable and the INTERVAL are removed from the xml), only display the update notification messaging, and only if an update is available. (Done)
+Notification dialog title should be "Update or Uninstall Adobe Flash Player", "Uninstall Adobe 
+
+
+Go cart Feature Points
+Query for Neha AG:
+1. This feature will be enabled only for windows
+2. does this feature will not appear for Enterprises?-- NO installation of go cart in ROW (Enterprise)
+3.This feature will download and execute the GoCart installer that is hosted by the ACDC team.(DOES this mean it will also work for PDC)--for both
+4.y the -iv command line argument that is passed to the installer at launch time. (Choosing Sau over other installation parameters)
+5.AGSS service(Will show the go cart running state)
+6. mark it for deletion upon reboot, and install the new GoCart core installer.--check this is the installation will occur before the reboot or what will happens in this case--- go cart instllation will not pause.
+7. The Flash Player installer will generate one sha2 hash per 1MB segment of the GoCart installer, then compare the hashes against those listed in the GoCart manifest file. If the hashes do not match, feature execution will be aborted and the associated error code will be reported by the Flash Player installer to its back-end reporting system.--Do we need 
+8. Does the validation would takes place after installation of go cart or it would takes place when the flash will update via SAU what is the process for this
+9.what happens when the Fp version is old but the go cart installer is already there in the system-- no change in go cart if it is already latest
+10. First it download manifest then again it download the go cart installer doe this mean manifiest file is not responsible for go cart installation
+11.Clear at what step the flash player will leave--upto running exe of go cart
+12. Need to understand what will happen when there is already go cart installed in system.
+13.does it come only for 32 bit
+
+
+
+GUID (or UUID) is an acronym for 'Globally Unique Identifier' (or 'Universally Unique Identifier'). It is a 128-bit integer number used to identify resources. The term GUID is generally used by developers working with Microsoft technologies, while UUID is used everywhere else.
+
+EOL Notifiers Queries for Ridhi Jain:
+1. Impacts both Notification and SAU users --- Yes 
+2.We will only examine the Settings.sol file of the current user to determine when Flash content was last played (AX and NPAPI only). ---What happens for the ppapi fp---This feature is diabled for ppapi but will confirm with ridhi-- Correct not created for ppapi
+3.  XML setting "eolEnable INTERVAL"---Confirm with Ridhi that I am seeing correct or not ---remaining ket value confirmation from rj
+4. The notifier on Windows (FlashUtil.exe) will need to relaunch itself with high integrity in order to perform the uninstall; this means that a UAC prompt may appear after the uninstall button is clicked (depending upon the user's current permissions and OS). (Done) --- Need Help from ridhi to confirm this point
+5. What exactly does the notification update mean for different player type.
+6. autoUpdateLastCheck"---what is this parameter and where it is placed? only for AX
+7.post eol there will be no download button irrespective of older flash version we have-- how to test need to confirm.
+8. what is expected behaviour when we have 2 player type one is latest and other one is old-- which buttons should be shown 
+9. For MAc standalone uninstaller build which one?
+10. sol file is cleaned after 24 hr how we'll track the time and date of fp last played when the sol file gets cleaned after 24 hr.-- only entry gets updated
+11.s feature reports IV 21-- what is this?
+12. Does there would be any change in notification system for Enterprise ROW customers? 
+13. SilentAutoUpdateEnable=1 in mms.cfg --can we see the uninstall dialog box for sau
+14. No notification is shown for sau --- Test apne end se /// clear later
+15. ppapi player is also enabled for mac
+16.  defined(NETSCAPE) -- for FF confrim ? -- FF 
+17. What happens when someone delete the sol file?
+18. Go url not opened instead the adobe website is opening?
+
+	
+
+
+
+
+
+
+
+
+	
